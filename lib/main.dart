@@ -37,6 +37,12 @@ class MainApp extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: "Password",
                 ),
+                TextField(
+                  keyboardType: TextInputType.visiblePassword,
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: "Reset Password",
+                  ),
               ),
               TextField(
                 obscureText: true,
