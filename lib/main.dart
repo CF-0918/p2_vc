@@ -15,22 +15,51 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text(""),
+          title: Text("Hello Flutter"),
           backgroundColor: Colors.green,
         ),
-        body:Column(
-          spacing: 1.5,
-          children: [
-            Center(
-              child: Text("Login"),
-            ),
-            TextField(
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: const Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            spacing:4.0,
+            children: [
+              Text('Login'),
+              TextField(
+                  keyboardType: TextInputType.name,
+                  decoration: InputDecoration(
+                    labelText: "User Name",
+                  )
+              ),
+              TextField(
+                keyboardType: TextInputType.visiblePassword,
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: "Password",
+                ),
+              ),
+              TextField(
+                obscureText: true,
                 decoration: InputDecoration(
                   labelText: "Email",
-                  hint:Text("Enter email")
                 ),
-            )
-          ],
+              ),
+              Row(
+                children: [
+                  ElevatedButton(
+                    onPressed: null,
+                    child: Text("Login"),
+
+                  ),
+
+                  ElevatedButton(
+                    onPressed: null,
+                    child: Text("Register"),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
