@@ -28,7 +28,7 @@ class MainApp extends StatelessWidget {
               TextField(
                   keyboardType: TextInputType.name,
                   decoration: InputDecoration(
-                    labelText: "User soha Name",
+                    labelText: "User sohsa Name",
                   )
               ),
               TextField(
