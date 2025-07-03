@@ -51,7 +51,11 @@ class MainApp extends StatelessWidget {
                     child: Text("Login"),
 
                   ),
+                  ElevatedButton(
+                    onPressed: null,
+                    child: Text("New feature"),
 
+                  ),
                   ElevatedButton(
                     onPressed: null,
                     child: Text("Register"),
